@@ -15,4 +15,4 @@ jobs:
       - name: Deploy to Static.app
         uses: designmodo/static-app-deploy-action@main
         with:
-          api-token: ${{ secrets.STATIC_APP_API_KEY }}
+          api-key: ${{ secrets.STATIC_APP_API_KEY }}

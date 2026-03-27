@@ -12,10 +12,16 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
+      - name: Prepare site directory
+        run: |
+          mkdir site
+          find . -maxdepth 1 -not -name '.' -not -name '.git' -not -name '.github' -not -name 'site' -exec cp -r {} site/ \;
+
       - name: Deploy to Static.app
         uses: designmodo/static-app-deploy-action@v1.0.0
         with:
           api-key: ${{ secrets.STATIC_APP_API_KEY }}
           pid: "zdlxv7gfyw"
+          build-dir: "site"
           install-command: "echo 'No install needed'"
           build-command: "echo 'No build needed'"

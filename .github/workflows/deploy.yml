@@ -13,6 +13,6 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Deploy to Static.app
-        uses: designmodo/static-app-deploy-action@v1
+        uses: designmodo/static-app-deploy-action@main
         with:
           api-token: ${{ secrets.STATIC_APP_API_KEY }}

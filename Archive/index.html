@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabflow - Master Your Focus</title>
+    <meta name="description" content="Tabflow is an all-in-one workspace manager, tab organizer, and deep-focus environment.">
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <img src="./tabflow_logo_dark.svg" alt="Tabflow Logo" width="140">
+            </a>
+            
+            <nav class="nav-links">
+                <a href="#" class="nav-link">Home</a>
+                <div class="nav-item-dropdown">
+                    <a href="#features" class="nav-link nav-link-dropdown">Features <svg width="12" height="12" viewBox="0 0 24 24" fill="none" class="chevron"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                </div>
+                <a href="#pricing" class="nav-link">Pricing</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="header-actions">
+                <a href="#" class="btn btn-primary">
+                    Install Tabflow <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="4"></circle><line x1="21.17" y1="8" x2="12" y2="8"></line><line x1="3.95" y1="6.06" x2="8.54" y2="14"></line><line x1="10.88" y1="21.94" x2="15.46" y2="14"></line></svg>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-container">
+            <div class="trust-badge">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M8 11l3 3 5-5"/></svg>
+                <span>Trusted by productivity enthusiasts & startups around the world</span>
+            </div>
+
+            <h1 class="hero-title">
+                Master Your Focus <br> And <span class="text-gradient">Organize Your Web</span>
+            </h1>
+
+            <p class="hero-subtitle">
+                Replace your new tab page with a comprehensive workspace manager. Free up RAM, track your time, block distractions, and enter deep work instantly.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#" class="btn btn-primary btn-lg">
+                    Install Tabflow <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="4"></circle><line x1="21.17" y1="8" x2="12" y2="8"></line><line x1="3.95" y1="6.06" x2="8.54" y2="14"></line><line x1="10.88" y1="21.94" x2="15.46" y2="14"></line></svg>
+                </a>
+                <a href="#" class="btn btn-outline btn-lg">
+                    Learn More <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+            </div>
+
+            <div class="hero-mockup-wrapper">
+                <div class="hero-mockup">
+                    <div class="app-header">
+                        <div class="app-dots">
+                            <span class="dot dot-r"></span>
+                            <span class="dot dot-y"></span>
+                            <span class="dot dot-g"></span>
+                        </div>
+                        <div class="app-search">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                            <span>Search Workspace (Cmd+K)</span>
+                        </div>
+                    </div>
+                    <div class="app-body">
+                        <div class="app-sidebar">
+                            <div class="app-menu-item active">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+                                Dashboard
+                            </div>
+                            <div class="app-menu-item">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                Focus Mode
+                            </div>
+                            <div class="app-menu-item">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                                My Flows
+                            </div>
+                        </div>
+                        <div class="app-content">
+                            <div class="app-greeting">
+                                <h3>Welcome back, Creator</h3>
+                                <p>You have 3 Flows active today.</p>
+                            </div>
+                            <div class="app-cards">
+                                <div class="app-card">
+                                    <div class="app-card-title">Development</div>
+                                    <div class="app-card-val">12 tabs</div>
+                                    <div class="app-card-badge">Hibernate</div>
+                                </div>
+                                <div class="app-card">
+                                    <div class="app-card-title">Focus Timer</div>
+                                    <div class="app-card-val">25:00</div>
+                                    <div class="app-card-badge success">Start</div>
+                                </div>
+                                <div class="app-card">
+                                    <div class="app-card-title">Zen Mode</div>
+                                    <div class="app-card-val">Ready</div>
+                                    <div class="app-card-badge outline">Breathe</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Floating geometric shapes for depth -->
+                <div class="float-shape shape-1"></div>
+                <div class="float-shape shape-2"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Logo Ticker -->
+    <section class="logo-ticker">
+        <div class="container">
+            <p class="ticker-title">Loved By Power Users & Teams From Around The World</p>
+            <div class="ticker-track-wrapper">
+                <div class="ticker-track">
+                    <!-- Repeated logos for infinite scroll effect -->
+                    <div class="ticker-item"><img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google"></div>
+                    <div class="ticker-item"><img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Microsoft_logo_%.svg" alt="Microsoft"></div>
+                    <div class="ticker-item"><span style="font-weight:700; font-size:24px; color:#A0A4AB;">Meta</span></div>
+                    <div class="ticker-item"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon"></div>
+                    <div class="ticker-item"><span style="font-weight:700; font-size:24px; color:#A0A4AB;">LinkedIn</span></div>
+                    
+                    <!-- Duplicate -->
+                    <div class="ticker-item"><img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google"></div>
+                    <div class="ticker-item"><img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Microsoft_logo_%.svg" alt="Microsoft"></div>
+                    <div class="ticker-item"><span style="font-weight:700; font-size:24px; color:#A0A4AB;">Meta</span></div>
+                    <div class="ticker-item"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon"></div>
+                    <div class="ticker-item"><span style="font-weight:700; font-size:24px; color:#A0A4AB;">LinkedIn</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Sections -->
+    <section class="features-section" id="features">
+        
+        <!-- Feature 1: Flows -->
+        <div class="container feature-container">
+            <div class="feature-content">
+                <div class="feature-tag">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
+                    FEATURES
+                </div>
+                <h2 class="feature-title">Intelligent Tab & Workspace Management</h2>
+                <p class="feature-desc">Replace your cluttered new tab page. Group related tabs together into saved workspaces called "Flows" and assign them custom icons and folders.</p>
+
+                <div class="feature-bullets">
+                    <div class="bullet">
+                        <div class="bullet-icon bg-purple">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="3" x2="9" y2="21"></line></svg>
+                        </div>
+                        <div class="bullet-text">
+                            <h4>Active Tabs & Clusters</h4>
+                            <p>Instantly see all active tabs in a clean dashboard view.</p>
+                        </div>
+                    </div>
+                    <div class="bullet">
+                        <div class="bullet-icon bg-pink">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                        </div>
+                        <div class="bullet-text">
+                            <h4>Saved Workspaces</h4>
+                            <p>Organize specific tabs into dedicated, recoverable Flows.</p>
+                        </div>
+                    </div>
+                    <div class="bullet">
+                        <div class="bullet-icon bg-green">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                        </div>
+                        <div class="bullet-text">
+                            <h4>Resource Management</h4>
+                            <p>Free up native RAM by automatically hibernating inactive tabs.</p>
+                        </div>
+                    </div>
+                    <div class="bullet">
+                        <div class="bullet-icon bg-blue">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+                        </div>
+                        <div class="bullet-text">
+                            <h4>Timeline Auto-Save</h4>
+                            <p>Trace your workflow and recover lost groups of tabs.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#" class="btn btn-primary mt-4">
+                    Install Tabflow <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="4"></circle><line x1="21.17" y1="8" x2="12" y2="8"></line><line x1="3.95" y1="6.06" x2="8.54" y2="14"></line><line x1="10.88" y1="21.94" x2="15.46" y2="14"></line></svg>
+                </a>
+            </div>
+            
+            <div class="feature-visual">
+                <div class="visual-card">
+                    <div class="visual-header">
+                        <span>Workspace: Project Launch</span>
+                        <div class="app-dots">
+                            <span class="dot" style="background:var(--color-pink)"></span>
+                        </div>
+                    </div>
+                    <div class="visual-body">
+                        <div class="mock-tab flex-row">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="G" width="16"> Google Analytics
+                            <span class="badge badge-purple float-right">Active</span>
+                        </div>
+                        <div class="mock-tab flex-row">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="A" width="16"> AWS Console
+                            <span class="badge badge-purple float-right">Active</span>
+                        </div>
+                        <div class="mock-tab flex-row disabled">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#999" stroke-width="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg> GitHub Repo
+                            <span class="badge badge-gray float-right">Hibernating</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Floating stat -->
+                    <div class="float-stat right-bottom">
+                        <div class="stat-circle">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+                        </div>
+                        <div>
+                            <h5>RAM Saved</h5>
+                            <p>1.2 GB</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Feature 2: Productivity & Focus (Reversed) -->
+        <div class="container feature-container reversed">
+            <div class="feature-content">
+                <div class="feature-tag">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                    FEATURES
+                </div>
+                <h2 class="feature-title">Productivity & Focus Environment</h2>
+                <p class="feature-desc">Enforce strict deep-work habits with built-in timers, and block distractions while you work. Take a breather with Zen Mode between sessions.</p>
+
+                <div class="feature-bullets">
+                    <div class="bullet">
+                        <div class="bullet-icon bg-purple">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                        </div>
+                        <div class="bullet-text">
+                            <h4>Focus Mode (Pomodoro)</h4>
+                            <p>Presets for 15m, 25m, 45m, 60m with ambient background music.</p>
+                        </div>
+                    </div>
+                    <div class="bullet">
+                        <div class="bullet-icon bg-pink">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="7.86 2 16.14 2 22 7.86 22 16.14 16.14 22 7.86 22 2 16.14 2 7.86 7.86 2"></polygon><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg>
+                        </div>
+                        <div class="bullet-text">
+                            <h4>Distraction Blocker</h4>
+                            <p>Automatically block YouTube, TikTok, and custom URLs.</p>
+                        </div>
+                    </div>
+                    <div class="bullet">
+                        <div class="bullet-icon bg-green">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path><path d="M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"></path><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path></svg>
+                        </div>
+                        <div class="bullet-text">
+                            <h4>Zen Mode</h4>
+                            <p>A dedicated space for breathwork between your intense sessions.</p>
+                        </div>
+                    </div>
+                    <div class="bullet">
+                        <div class="bullet-icon bg-blue">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg>
+                        </div>
+                        <div class="bullet-text">
+                            <h4>Analytics & Monitoring</h4>
+                            <p>Monitor productivity behaviors and track distraction patterns.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#" class="btn btn-primary mt-4">
+                    Install Tabflow <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="4"></circle><line x1="21.17" y1="8" x2="12" y2="8"></line><line x1="3.95" y1="6.06" x2="8.54" y2="14"></line><line x1="10.88" y1="21.94" x2="15.46" y2="14"></line></svg>
+                </a>
+            </div>
+            
+            <div class="feature-visual">
+                <div class="visual-card">
+                    <div class="timer-dial">
+                        <svg viewBox="0 0 36 36" class="circular-chart">
+                            <path class="circle-bg"
+                                  d="M18 2.0845
+                                    a 15.9155 15.9155 0 0 1 0 31.831
+                                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                            />
+                            <path class="circle"
+                                  stroke-dasharray="75, 100"
+                                  d="M18 2.0845
+                                    a 15.9155 15.9155 0 0 1 0 31.831
+                                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                            />
+                            <text x="18" y="20.35" class="timer-text">25:00</text>
+                            <text x="18" y="25" class="timer-subtext">Focus Mode</text>
+                        </svg>
+                    </div>
+                    <div class="mock-tab flex-row justify-center mt-4">
+                        <div class="badge badge-pink">Block: youtube.com</div>
+                    </div>
+                    
+                    <!-- Floating stat -->
+                    <div class="float-stat left-top">
+                        <div class="stat-circle">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--color-success)" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                        </div>
+                        <div>
+                            <h5>Blocked</h5>
+                            <p>12 Distractions</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Feature 3: Command Palette -->
+        <div class="container feature-container">
+            <div class="feature-content">
+                <div class="feature-tag">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="3" x2="9" y2="21"></line><path d="M13 8l2 2-2 2"></path></svg>
+                    FEATURES
+                </div>
+                <h2 class="feature-title">Universal Command Palette</h2>
+                <p class="feature-desc">Jump between tabs, open saved Flows, or execute productivity commands without touching your mouse using the system-wide search palette.</p>
+
+                <div class="feature-bullets">
+                    <div class="bullet">
+                        <div class="bullet-icon bg-purple">
+                            <h4 style="color:var(--color-primary); font-size:10px;">Cmd K</h4>
+                        </div>
+                        <div class="bullet-text">
+                            <h4>Global Shortcuts</h4>
+                            <p>Trigger the nested palette anywhere with Cmd+Shift+K.</p>
+                        </div>
+                    </div>
+                    <div class="bullet">
+                        <div class="bullet-icon bg-pink">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+                        </div>
+                        <div class="bullet-text">
+                            <h4>Quick Tab Jump</h4>
+                            <p>Instantly search and switch to any open tab in seconds.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#" class="btn btn-primary mt-4">
+                    Install Tabflow <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="4"></circle><line x1="21.17" y1="8" x2="12" y2="8"></line><line x1="3.95" y1="6.06" x2="8.54" y2="14"></line><line x1="10.88" y1="21.94" x2="15.46" y2="14"></line></svg>
+                </a>
+            </div>
+            
+            <div class="feature-visual">
+                <div class="visual-card">
+                    <!-- Command Palette Mockup -->
+                    <div class="cmd-palette">
+                        <div class="cmd-search">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#999" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                            <input type="text" placeholder="Start Focus Session..." disabled>
+                        </div>
+                        <div class="cmd-results">
+                            <div class="cmd-item active">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                                <span>Start 25m Focus</span>
+                                <span class="cmd-shortcut">Enter</span>
+                            </div>
+                            <div class="cmd-item">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                                <span>Open "Dev Flow"</span>
+                                <span class="cmd-shortcut">⌘ 1</span>
+                            </div>
+                            <div class="cmd-item">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                                <span>Hibernate All Background Tabs</span>
+                                <span class="cmd-shortcut">⌘ H</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- How it works -->
+    <section class="steps-section" id="how-it-works">
+        <div class="container text-center">
+            <div class="feature-tag mx-auto">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg>
+                HOW IT WORKS
+            </div>
+            <h2 class="section-title">Steps to Getting Started With Tabflow</h2>
+            <p class="section-desc">Onboard effortlessly and unlock the full potential of Tabflow. Follow these simple steps to streamline your workflow and experience a new level of productivity.</p>
+
+            <div class="steps-grid">
+                <!-- Step 1 -->
+                <div class="step-card">
+                    <div class="step-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                    </div>
+                    <div class="step-header">
+                        <h4>1. Install the Extension</h4>
+                        <p>Add Tabflow to Chrome to instantly replace your new tab page and intercept native tab behaviors.</p>
+                    </div>
+                    <div class="step-visual bg-light">
+                        <div class="browser-bar">
+                            <div class="dots"><span style="background:#FF5F56;"></span><span style="background:#FFBD2E;"></span><span style="background:#27C93F;"></span></div>
+                            <div class="url">chrome.google.com/webstore</div>
+                        </div>
+                        <div class="btn btn-primary" style="margin-top:20px; font-size:12px; padding:6px 16px;">Add to Chrome</div>
+                    </div>
+                </div>
+                <!-- Step 2 -->
+                <div class="step-card">
+                    <div class="step-icon" style="color:var(--color-pink); background:#FFF0F5;">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="3" x2="9" y2="21"></line></svg>
+                    </div>
+                    <div class="step-header">
+                        <h4>2. Create Your First Flow</h4>
+                        <p>Group your currently active tabs into a saved workspace (e.g., "Deep Work", "Research").</p>
+                    </div>
+                    <div class="step-visual bg-light">
+                        <div class="mock-input">
+                            <label>Flow Name</label>
+                            <input type="text" value="Frontend Development" disabled>
+                        </div>
+                    </div>
+                </div>
+                <!-- Step 3 -->
+                <div class="step-card">
+                    <div class="step-icon" style="color:var(--color-success); background:#E8F5E9;">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                    </div>
+                    <div class="step-header">
+                        <h4>3. Set Deep Focus Mode</h4>
+                        <p>Start a Pomodoro timer and add sites like YouTube or social media to your unified blocklist.</p>
+                    </div>
+                    <div class="step-visual bg-light flex-center">
+                        <div class="toggle-row">
+                            <span>Block Distractions</span>
+                            <div class="toggle active"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Step 4 -->
+                <div class="step-card">
+                    <div class="step-icon" style="color:#3B82F6; background:#E3F2FD;">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+                    </div>
+                    <div class="step-header">
+                        <h4>4. Let Tabflow Manage Memory</h4>
+                        <p>As you work, Tabflow will automatically hibernate inactive background tabs to save system RAM.</p>
+                    </div>
+                    <div class="step-visual bg-light flex-center">
+                        <div class="chart-bars">
+                            <div class="bar" style="height: 30%"></div>
+                            <div class="bar" style="height: 50%"></div>
+                            <div class="bar" style="height: 20%; background:var(--color-success)"></div>
+                            <div class="bar" style="height: 10%; background:var(--color-success)"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="workflow-ready">
+                <div class="workflow-text">
+                    <h4>Ready to Streamline Your Workflow?</h4>
+                    <p>Unlock powerful automation and collaboration features with Tabflow. Get started today.</p>
+                </div>
+                <a href="#" class="btn btn-primary" style="background:#111;">
+                    Install Tabflow <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="4"></circle><line x1="21.17" y1="8" x2="12" y2="8"></line><line x1="3.95" y1="6.06" x2="8.54" y2="14"></line><line x1="10.88" y1="21.94" x2="15.46" y2="14"></line></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing-section bg-light-purple" id="pricing">
+        <div class="container text-center">
+            <div class="feature-tag mx-auto">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+                PRICING
+            </div>
+            <h2 class="section-title">Simple, Transparent Plans</h2>
+            <p class="section-desc">Choose the right plan for your productivity needs. Save more when you switch to yearly billing.</p>
+
+            <div class="billing-toggle">
+                <span class="active">Monthly billing</span>
+                <span>Yearly billing</span>
+            </div>
+
+            <div class="pricing-grid">
+                <!-- Basic Plan -->
+                <div class="pricing-card">
+                    <div class="plan-header">
+                        <span>For Individuals</span>
+                        <h3>Basic</h3>
+                        <p>Ideal for users who want to organize their tabs effortlessly.</p>
+                    </div>
+                    <div class="plan-price">
+                        <span class="currency">$</span><span class="amount">0</span><span class="period">/month</span>
+                    </div>
+                    <div class="plan-features">
+                        <h4>What's included</h4>
+                        <ul>
+                            <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg> Up to 5 Workspaces (Flows)</li>
+                            <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg> Focus Mode (Pomodoro)</li>
+                            <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg> Basic Distraction Blocker</li>
+                            <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg> Command Palette</li>
+                            <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg> Community Support</li>
+                        </ul>
+                    </div>
+                    <a href="#" class="btn btn-outline full-width">Install Tabflow <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="4"></circle><line x1="21.17" y1="8" x2="12" y2="8"></line><line x1="3.95" y1="6.06" x2="8.54" y2="14"></line><line x1="10.88" y1="21.94" x2="15.46" y2="14"></line></svg></a>
+                </div>
+
+                <!-- Pro Plan -->
+                <div class="pricing-card popular">
+                    <div class="popular-badge">Most Popular</div>
+                    <div class="plan-header">
+                        <span>For Power Users</span>
+                        <h3>Pro</h3>
+                        <p>Perfect for professionals needing advanced autonomous features.</p>
+                    </div>
+                    <div class="plan-price">
+                        <span class="currency">$</span><span class="amount">4.99</span><span class="period">/month</span>
+                    </div>
+                    <div class="plan-features">
+                        <h4>What's included</h4>
+                        <ul>
+                            <li><svg class="text-white" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg> Unlimited Workspaces</li>
+                            <li><svg class="text-white" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg> AI Curator (Syllabus Generation)</li>
+                            <li><svg class="text-white" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg> AI Summaries & Briefings</li>
+                            <li><svg class="text-white" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg> Advanced Productivity Analytics</li>
+                            <li><svg class="text-white" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg> Timeline Time Travel</li>
+                            <li><svg class="text-white" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg> Universal Command Sync</li>
+                        </ul>
+                    </div>
+                    <a href="#" class="btn btn-primary full-width" style="background:#fff; color:var(--color-primary)">Install Tabflow <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="4"></circle><line x1="21.17" y1="8" x2="12" y2="8"></line><line x1="3.95" y1="6.06" x2="8.54" y2="14"></line><line x1="10.88" y1="21.94" x2="15.46" y2="14"></line></svg></a>
+                </div>
+
+                <!-- Team Plan -->
+                <div class="pricing-card">
+                    <div class="plan-header">
+                        <span>For Growing Teams</span>
+                        <h3>Team</h3>
+                        <p>Designed for collaborative environments and shared knowledge.</p>
+                    </div>
+                    <div class="plan-price">
+                        <span class="currency">$</span><span class="amount">4.99</span><span class="period">/user/mo</span>
+                    </div>
+                    <div class="plan-features">
+                        <h4>What's included</h4>
+                        <ul>
+                            <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg> Everything in PRO</li>
+                            <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg> Multiplayer Team Workspaces</li>
+                            <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg> Shared Synced Flows</li>
+                            <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg> Admin & Permission Controls</li>
+                            <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg> Team Analytics Dashboard</li>
+                            <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg> Priority Support</li>
+                        </ul>
+                    </div>
+                    <a href="#" class="btn btn-outline full-width">Install Tabflow <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="4"></circle><line x1="21.17" y1="8" x2="12" y2="8"></line><line x1="3.95" y1="6.06" x2="8.54" y2="14"></line><line x1="10.88" y1="21.94" x2="15.46" y2="14"></line></svg></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials-section">
+        <div class="container text-center">
+            <div class="feature-tag mx-auto">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                TESTIMONIALS
+            </div>
+            <h2 class="section-title">Trusted by Power Users</h2>
+            <p class="section-desc">Hear what professionals love about Tabflow and how it transforms their workflow efficiency.</p>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Tabflow's command palette transformed how I navigate my browser. I haven't clicked to switch tabs in weeks. The Pomodoro integration is seamless!"</p>
+                    <div class="author">
+                        <div class="author-avatar" style="background:var(--color-accent)">A</div>
+                        <div class="author-info">
+                            <h5>Arlene McCoy</h5>
+                            <span>Software Engineer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"The AI Curator alone is worth it. I asked for a syllabus on Next.js authentication, and it built out a complete workspace with tabs laid out. Incredible."</p>
+                    <div class="author">
+                        <div class="author-avatar" style="background:var(--color-pink)">K</div>
+                        <div class="author-info">
+                            <h5>Karen Santos</h5>
+                            <span>Product Designer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Finally, a tool that forces me into deep work. Tabflow's distraction blocker actually intercepts requests natively. My productivity has skyrocketed."</p>
+                    <div class="author">
+                        <div class="author-avatar" style="background:var(--color-success)">A</div>
+                        <div class="author-info">
+                            <h5>Alicia Brown</h5>
+                            <span>Freelance Writer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section bg-light-purple">
+        <div class="container">
+            <div class="faq-header text-center">
+                <div class="feature-tag mx-auto">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+                    FAQ
+                </div>
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-desc">Got questions about Tabflow? We've got answers to help you get started.</p>
+            </div>
+
+            <div class="faq-accordion">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How does Tabflow save memory?</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Tabflow uses Chromium's native discarding API to completely unload the memory footprint of background tabs that you haven't used recently, without closing them. You'll still see them in your workspace, and they instantly reload when clicked.</p>
+                    </div>
+                </div>
+                <!-- FAQ 2 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Can I sync my workspaces across devices?</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, Tabflow Pro users have their flows securely synced to the cloud, allowing them to instantly retrieve their grouped workspaces on any Chrome browser signed into their profile.</p>
+                    </div>
+                </div>
+                <!-- FAQ 3 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Is there a keyboard shortcut for everything?</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely. Pressing Cmd+Shift+K (or Ctrl+Shift+K on Windows) opens the Universal Command Palette. From there, you can type to jump to tabs, start focus mode, or hibernate unneeded windows without ever touching the mouse.</p>
+                    </div>
+                </div>
+                <!-- FAQ 4 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What's the difference between Free and Pro?</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>The free tier gives you 5 workspaces, the basic Pomodoro timer, and command palette. Pro unlocks unlimited sync, AI-curated workspaces, timeline time travel, and deep productivity analytics.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer CTA -->
+    <section class="footer-cta">
+        <div class="container text-center">
+            <h2>Ready to transform the way you work?</h2>
+            <p>Join thousands of professionals already saving hours every week.</p>
+            <div class="hero-buttons justify-center">
+                <a href="#" class="btn btn-primary btn-lg" style="background:#fff; color:var(--color-primary)">
+                    Install Tabflow <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="4"></circle><line x1="21.17" y1="8" x2="12" y2="8"></line><line x1="3.95" y1="6.06" x2="8.54" y2="14"></line><line x1="10.88" y1="21.94" x2="15.46" y2="14"></line></svg>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Shape -->
+        <div class="cta-shape"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="./tabflow_logo_dark.svg" alt="Tabflow" width="120" style="margin-bottom:20px;">
+                    <p style="color:var(--color-text-muted); font-size:14px; max-width:240px; margin-bottom:24px;">The all-in-one workspace manager designed to help you master your focus and organize your web.</p>
+                    <div class="social-links">
+                        <a href="#"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a>
+                        <a href="#"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h5>Product</h5>
+                    <a href="#">Features</a>
+                    <a href="#">Pricing</a>
+                    <a href="#">Changelog</a>
+                    <a href="#">Roadmap</a>
+                </div>
+                
+                <div class="footer-links">
+                    <h5>Resources</h5>
+                    <a href="#">Help Center</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Productivity Tips</a>
+                    <a href="#">Community</a>
+                </div>
+                
+                <div class="footer-links">
+                    <h5>Legal</h5>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Tabflow Inc. All rights reserved.</p>
+                <div class="footer-status">
+                    <span class="status-dot"></span> All systems operational
+                </div>
+            </div>
+        </div>
+    </footer>

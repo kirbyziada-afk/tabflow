@@ -17,3 +17,5 @@ jobs:
         with:
           api-key: ${{ secrets.STATIC_APP_API_KEY }}
           pid: "zdlxv7gfyw"
+          install-command: "echo 'No install needed'"
+          build-command: "echo 'No build needed'"
